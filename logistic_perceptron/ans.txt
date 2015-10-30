@@ -1,0 +1,25 @@
+---------------------------------------------------------------------
+Name: Mandar Darwatkar
+SID: 861141010
+October 31, 2014
+CS229
+PS3 - ans.txt
+----------------------------------------------------------------------
+
+1) How many iterations does it take for each method to converge?
+For the given problem set following are the observations:
+Logistic regression algorithm converges in 5 iterations.
+Since the given data is not linearly separable, the Perceptron learning algorithm does not converge. Hence we try to achieve best solution that settles over classification. This is obtained after approx. 22 iterations i.e. when learning rate is small enough (<0.001). ( But if the data were linearly separable, convergence is guranteed.)
+
+2) Which method do you prefer for this problem?
+For given data set class2d.ascii, logistic regression is preferred as it is more efficient and accurate, converges even when data is linearly inseperable. 
+If the input data set is small, logistic regression is preferred because it moves to minimum faster than perceptron learning algorithm. But, logisitic regression involves finding and inverting NxN Hessian which is more expensive, thus, as N increases, it becomes less promising.
+On the other hand, Perceptron learning algorithm has following drawbacks:
+a. If data is not linearly separable, the algorithm cycles and never converges.
+b. If the learning rate is too small, the progress to convergence is it too slow and if it is large, the decision boundary bounces all around the graph.
+c. If the data is linearly seperable, there are different solutions depending on starting value of learning rate and weights.
+Thus, we see that weakness of perceptron learning lies not is learning rule but the structure of the data.
+
+3) What if there were thousands (or millions) of data points?
+As logisitic regression involves computation of NxN Hessian, which large data set, it is prone to exhaust more computation space.
+While on the other hand, perceptron learning being error driven i.e. depends on the wiggle room available for the solution and not the features in space, will be slow towards convergence with large dataset provided that data is linearly separable.

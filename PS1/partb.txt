@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------------------------------------------
+Name: Mandar Darwatkar
+SID: 861141010
+October 15, 2014
+CS229
+PS1 - part-b
+-------------------------------------------------------------------------------------------------------------------
+
+
+First observation from graph in Figure 2.6 and graph generated in assignment is that as the dimensionality of space increases, the scarcity of data increases. This is because the volume  grows fast with increasing dimensions. Consequently the average distance between the data points increases. Methods local in low dimensions no longer remain local in higher dimensions, for example, the graphs show that, to capture local neighbourhood of a point we need to cover more span of space.
+
+Second observation is, greater the average distance between data points implies that the most data points are located close to boundary. This makes prediction difficult because of loss of neighbours upon whom the prediction depends.
+
+This creates a problem. As organizing/mining/searching data depends on which data is more similar than remainder data. Generally data with similar properties/features appear clustered/classified together. But when dimensionality is high, the data is sparse enough, which may lead to each data point being considered dissimilar from other. This in turn will make organization/searching difficult, for example, suppose we consider the efficacy of a drug in terms of the reduction of any one of a number of disease symptoms. As more symptoms are considered, it becomes more likely that the drug will appear to be an improvement over existing drugs in terms of at least one symptom. Also, sampling fewer observations gives more  inconsistency in data, we try to increase the size of data set (and reduce the average distance between data points) for high dimensional spaces inorder to increase the proximity of data points (to obtain statistically reliable result).
+
+
+
+References:
+a. "The Elements of Statistical Learning: Data Mining, Inference, and Prediction", Second edition, Trevor et al.
+b.  http://math.arizona.edu/~hzhang/math574m/2014Lect10_curse.pdf
